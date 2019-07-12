@@ -37,7 +37,19 @@
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group row"><label class="col-sm-2 col-form-label">Email</label>
-                                <div class="col-sm-10"><input type="text" name="email" class="form-control" value="{{$info->email}}">
+                                <div class="col-sm-10"><input type="text" name="email" class="form-control" readonly="readonly" value="{{$info->email}}">
+                                </div>
+                            </div>
+                            <div class="hr-line-dashed"></div>
+                            <div class="form-group row"><label class="col-sm-2 col-form-label">상태</label>
+                                <div class="col-sm-10">
+                                    <div class="col-lg-4 m-l-n">
+                                        <select class="form-control" >
+                                            <option value="nomall">일반</option>
+                                            <option value="black">블랙</option>
+                                            <option value="out">탈퇴</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                             <div class="hr-line-dashed"></div>
